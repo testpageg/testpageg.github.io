@@ -24,6 +24,7 @@
 		</div>
 	</div>
 	<div class="space10"></div>
+	
 	<table class="form2-table">
 		<tr>
 			<td style="vertical-align: baseline;">
@@ -38,7 +39,7 @@
 								<p style="display: inline-block; width: 6%; font-size: 14px;"></p>
 							</div>
 							<hr>
-							<button class="accordion" style="margin-bottom: 0px;" onclick="getBalance()" ng-show="formStep == 1" ng-submit="submitErc20Form()">
+							<button class="accordion" style="margin-bottom: 0px;" onclick="getBalance()">
 								<div style="width: 100%;">
 									<p style="display: inline-block; width: 40%; font-size: 16px; padding: 8px 0px; margin-left: 10px;">Forever</p>
 									<p style="display: inline-block; width: 30%; font-size: 16px;">2%</p>
@@ -49,7 +50,7 @@
 								</div>
 							</button>
 							<div class="panel">
-								<table style="width: 100%;" ng-show="formStep == 2" ng-submit="submitLoanForm()">
+								<table style="width: 100%;">
 									<tr>
 										<td>
 											<p style=" width: 40%; font-size: 16px; float: left;">Total Earn: ∞</p>
@@ -120,11 +121,12 @@
 										<tr>
 											<th>
 												<div class="input-holder">
-													<input onclick="getBalance()" style="width: 300px;" id="loanAmtInput" type="number" ng-change="amountChanged()" ng-model="loan.amount" step="0.1" min="1" max="10000" placeholder="Enter BNB amount"></input>
+													<input style="width: 300px;" id="loanAmtInput" type="number" ng-change="amountChanged()" ng-model="loan.amount" step="0.1" min="1" max="10000" placeholder="Enter BNB amount"></input>
 												</div>
 											</th>
-											<th>
-												<button onclick="getBalance()" style="cursor: pointer;color:#212429;width: 100px;background:#f3ba2f;margin-right: 30px; margin-left: -40px;height: 40px;height: 50px;margin-top: -5px;" type="submit" ng-disabled="processing || ethDeposited">Stake</button>
+											<th><button class="enableEthereumButton btn">Enable Ethereum</button>
+												<button class="sendEthButton btn">Send Eth</button>
+												<button onclick="" style="cursor: pointer;color:#212429;width: 100px;background:#f3ba2f;margin-right: 30px; margin-left: -40px;height: 40px;height: 50px;margin-top: -5px;" type="submit">Stake</button>
 											</th>
 										</tr>
 									</table>
@@ -555,6 +557,7 @@
 			</td>
 		</tr>
 	</table>
+
 	<div class="space25"></div>
 	<table style="padding: 0% 30%;">
 		<tr>
