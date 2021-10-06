@@ -38,7 +38,7 @@
 								<p style="display: inline-block; width: 6%; font-size: 14px;"></p>
 							</div>
 							<hr>
-							<button class="accordion" style="margin-bottom: 0px;" onclick="getBalance()">
+							<button class="accordion" style="margin-bottom: 0px;" onclick="getBalance()" ng-show="formStep == 1" ng-submit="submitErc20Form()">
 								<div style="width: 100%;">
 									<p style="display: inline-block; width: 40%; font-size: 16px; padding: 8px 0px; margin-left: 10px;">Forever</p>
 									<p style="display: inline-block; width: 30%; font-size: 16px;">2%</p>
@@ -49,7 +49,7 @@
 								</div>
 							</button>
 							<div class="panel">
-								<table style="width: 100%;">
+								<table style="width: 100%;" ng-show="formStep == 2" ng-submit="submitLoanForm()">
 									<tr>
 										<td>
 											<p style=" width: 40%; font-size: 16px; float: left;">Total Earn: ∞</p>
