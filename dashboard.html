@@ -20,9 +20,9 @@
 			<div class="topnav-right" style="padding: 15px 0px;">
 				<button class="enableEthereumButton" style="display: inline; width: 100px;padding: 5px 0px; margin-right: 25px;" onclick="getElementById('hidden-div').style.display = 'block'; this.style.display = 'none'">Connect</button>
 				<span style="display: inline; " class="showAccount" id="showAcc"></span>
-				<div id="asd"></div>
+				<div id="acc" style="color:#f3ba2f"></div>
 				<script>
-					document.getElementById("showAcc").innerHTML = document.getElementById("asd").innerHTML
+					document.getElementById("showAcc").innerHTML = document.getElementById("acc").innerHTML
 				</script>
 			</div>
 		</div>
@@ -512,7 +512,7 @@
 						</td>
 					</tr>
 				</table>
-				</br> <a id="input" style="font-size: 0px; height: 0px;">https://bnbfactor.com/?r={{account.address}}</a>
+				</br> <a id="input" style="font-size: 0px; height: 0px;">https://bnbfactor.com/?r=<div id="acc"></div>></a>
 				<table class="form-table-b2" style="margin-top: 0px;">
 					<tr>
 						<td>
@@ -536,7 +536,7 @@
 													<td>
 														<table class="form-table-b2" style="margin:0px 0px 20px 0px; background-color: #fff;box-shadow: none;width: 210px;padding: 20px 5px;">
 															<tr>
-																<td> <a onclick="copyRef()" style="font-size: 13px;">https://bnbfactor.com/?r=<div>{{ox}}</div></a>
+																<td> <a onclick="copyRef()" style="font-size: 13px;">https://bnbfactor.com/?r=<div>0x..</div></a>
 																</td>
 															</tr>
 														</table>
