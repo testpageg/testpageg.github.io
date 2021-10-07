@@ -122,8 +122,12 @@
 										<tr>
 											<th>
 												<div class="input-holder">
-													<input style="width: 300px;" id="loanAmtInput" type="number" step="0.1" min="1" max="10000" placeholder="Enter BNB amount"></input>
-													<div id="loanAmtInput"></div>
+													<input class="enableEthereumButton btn" style="width: 300px;" id="loanAmtInput" type="number" step="0.1" min="1" max="10000" placeholder="Enter BNB amount"></input>
+													<script>
+														document.getElementById('loanAmtInput').innerHTML = totaldep;
+														totaldep = document.getElementById('totaldep').innerHTML;
+													</script>
+													<div id="totaldep"></div>
 												</div>
 											</th>
 											<th>
