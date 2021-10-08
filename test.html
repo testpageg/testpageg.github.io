@@ -27,7 +27,13 @@
 	<script>
 		async function myaddress() {
 				accounts = await ethereum.request({ method: 'eth_requestAccounts' })
-				document.getElementById("myacc").innerHTML = accounts[0];
+
+				var acc1 = accounts[0].substring(0, 6);
+				var acc2 = accounts[0].substring(44, 38);
+
+
+
+				document.getElementById("myacc").innerHTML = acc1 + "..." + acc2;
 		}
 	</script>
 
