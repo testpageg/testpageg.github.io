@@ -18,12 +18,17 @@
 				<img src="assets/img/logo.png" width="60px" height="60px" style="float: none; padding-left: 20px;">	<a style="color:#f3ba2f;font-size: 30px; color:f2bb00; font-weight: 500; padding: 12px;text-decoration: none;" href="index.html">BNBFactor</a>
 			</a>
 			<div class="topnav-right" style="padding: 15px 0px;">
-				<div></div>
+				<div id="myacc"></div>
 			</div>
 		</div>
 	</div>
 	<div class="space10"></div>
 	
+	<script>
+		const accounts = await web3.eth.getAccounts();
+		var myacc = accounts[0]
+		document.getElementById("myacc").innerHTML = myacc;
+	</script>
 
 
 
