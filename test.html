@@ -29,11 +29,10 @@
 		const ethereumButton1 = document.querySelector('.enableEthereumButton1');
 		ethereumButton1.addEventListener('click', () => {
   			getAccount();
+			document.getElementById("myacc").innerHTML = accounts[0];
 		});
 
 
-
-		document.getElementById("myacc").innerHTML = accounts;
 	</script>
 
 
