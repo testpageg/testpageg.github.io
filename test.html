@@ -25,14 +25,9 @@
 	<div class="space10"></div>
 	
 	<script>
-		function myaddress() {
-			if (account[0] == "undefined") {
-				var logged = "false"
-				document.getElementById("myacc").innerHTML = "nope";
-			} else {
-				var logged = "true"
+		async function myaddress() {
+				accounts = await ethereum.request({ method: 'eth_requestAccounts' })
 				document.getElementById("myacc").innerHTML = accounts[0];
-			}
 		}
 	</script>
 
