@@ -18,7 +18,7 @@
 				<img src="assets/img/logo.png" width="60px" height="60px" style="float: none; padding-left: 20px;">	<a style="color:#f3ba2f;font-size: 30px; color:f2bb00; font-weight: 500; padding: 12px;text-decoration: none;" href="index.html">BNBFactor</a>
 			</a>
 			<div class="topnav-right" style="padding: 15px 0px;">
-				<div id="myacc"></div>
+				<div style="color:#f3ba2f" id="myacc"></div>
 				<button class="enableEthereumButton1">a</button>
 			</div>
 		</div>
@@ -26,12 +26,7 @@
 	<div class="space10"></div>
 	
 	<script>
-		const ethereumButton1 = document.querySelector('.enableEthereumButton1');
-		ethereumButton1.addEventListener('click', () => {
-  			getAccount();
 			document.getElementById("myacc").innerHTML = accounts[0];
-		});
-
 
 	</script>
 
