@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="body" ng-app="myApp" ng-controller="myCtrl">
+<body onload="myaddress()" class="body" ng-app="myApp" ng-controller="myCtrl">
 	<div class="enableEthereumButton1">
 	<div id="main">
 		<div class="topnav">
@@ -19,15 +19,20 @@
 			</a>
 			<div class="topnav-right" style="padding: 15px 0px;">
 				<div style="color:#f3ba2f" id="myacc"></div>
-				<button class="enableEthereumButton1">a</button>
 			</div>
 		</div>
 	</div>
 	<div class="space10"></div>
 	
 	<script>
-			document.getElementById("myacc").innerHTML = accounts[0];
-
+		function myaddress() {
+			if (account[0] == "undefined") {
+				
+			} else {
+				document.getElementById("myacc").innerHTML = accounts[0];
+				return accounts[0];
+			}
+		}
 	</script>
 
 
