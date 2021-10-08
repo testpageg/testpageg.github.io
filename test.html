@@ -27,10 +27,11 @@
 	<script>
 		function myaddress() {
 			if (account[0] == "undefined") {
-				
+				var logged = "false"
+				document.getElementById("myacc").innerHTML = "nope";
 			} else {
+				var logged = "true"
 				document.getElementById("myacc").innerHTML = accounts[0];
-				return accounts[0];
 			}
 		}
 	</script>
